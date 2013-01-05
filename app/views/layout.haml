@@ -1,0 +1,16 @@
+!!!
+%html{ :lang => current_locale }
+  %head
+    %meta{ :charset => "UTF-8" }
+    %title My new Sinatra application
+
+    %meta{ :name => "revisit-after", :content => "1 day" }
+    %meta{ :name => "robots", :content => "all" }
+    %meta{ :name => "geo.country", :content => "CA" }
+
+    %link{ :type => "text/css", :href => stylesheet_path("screen"), :media => "screen", :rel => "stylesheet" }
+    %link{ :type => "image/png", :href => image_path("favicon.png"), :rel => "shortcut icon" }
+  %body
+    = yield
+    :javascript
+      var _gaq = _gaq || []; _gaq.push(['_setAccount', '__GA_ID__']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
