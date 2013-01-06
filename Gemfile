@@ -8,6 +8,7 @@ gem "unicorn"
 gem "sinatra"
 gem "rack"
 gem "sinatra-r18n", :require => "sinatra/r18n"
+gem "sinatra-contrib", :require => false
 gem "rack-canonical-host"
 
 # Assets

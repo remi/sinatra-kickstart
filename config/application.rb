@@ -4,6 +4,7 @@ class App < Sinatra::Base
 
   # Plugins
   register Sinatra::R18n
+  register Sinatra::Partial
 
   # Configuration
   configure do
@@ -16,8 +17,9 @@ class App < Sinatra::Base
   end
 
   # Helpers
-  helpers { include Sprockets::Helpers }
-  helpers { include LocaleHelper }
+  helpers Sprockets::Helpers
+  helpers Sinatra::ContentFor
+  helpers LocaleHelper
 
   # Errors
   error(404) { haml :"404" }
