@@ -19,6 +19,9 @@ class App < Sinatra::Base
   helpers { include Sprockets::Helpers }
   helpers { include LocaleHelper }
 
+  # Errors
+  error(404) { haml :"404" }
+
   # Routes
   get("/") { haml :index }
 end
