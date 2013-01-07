@@ -14,6 +14,7 @@ class App < Sinatra::Base
     set :public_folder, proc { File.join(root, 'public') }
     set :default_locale, 'fr'
     enable :static
+    enable :partial_underscores
   end
 
   # Helpers

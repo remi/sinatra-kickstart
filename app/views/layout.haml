@@ -3,13 +3,12 @@
   %head
     %meta{ :charset => "UTF-8" }
     %title My new Sinatra application
-
     %meta{ :name => "revisit-after", :content => "1 day" }
     %meta{ :name => "robots", :content => "all" }
     %meta{ :name => "geo.country", :content => "CA" }
-
     %link{ :type => "text/css", :href => stylesheet_path("screen"), :media => "screen", :rel => "stylesheet" }
     %link{ :type => "image/png", :href => image_path("favicon.png"), :rel => "shortcut icon" }
+    = yield_content(:head)
   %body
     = yield
     :javascript

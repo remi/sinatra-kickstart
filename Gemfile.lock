@@ -33,6 +33,8 @@ GEM
       rack-test
       sinatra (~> 1.3.0)
       tilt (~> 1.3)
+    sinatra-partial (0.4.0)
+      sinatra
     sinatra-r18n (1.1.3)
       r18n-core (= 1.1.3)
       sinatra (>= 1.3)
@@ -67,6 +69,7 @@ DEPENDENCIES
   shotgun
   sinatra
   sinatra-contrib
+  sinatra-partial
   sinatra-r18n
   sprockets
   sprockets-helpers
