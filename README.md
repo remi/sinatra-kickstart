@@ -2,6 +2,8 @@
 
 This is what I use as a template for my Sinatra applications.
 
+Parts of the code were inspired by the work of [Raf](https://github.com/rafBM) and [Étienne](https://github.com/EtienneLem) at [Heliom](http://heliom.ca).
+
 ## Installation and Usage
 
 ```shell
