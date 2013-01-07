@@ -8,6 +8,7 @@
     %meta{ :name => "geo.country", :content => "CA" }
     %link{ :type => "text/css", :href => stylesheet_path("screen"), :media => "screen", :rel => "stylesheet" }
     %link{ :type => "image/png", :href => image_path("favicon.png"), :rel => "shortcut icon" }
+    %script{ :src => javascript_path("application") }
     = yield_content(:head)
   %body
     = yield
